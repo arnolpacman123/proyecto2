@@ -112,6 +112,7 @@
       <path value="$PROJECT_DIR$/script/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/script/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/script/vendor/spatie/laravel-pjax" />
+      <path value="$PROJECT_DIR$/script/vendor/_laravel_idea" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
