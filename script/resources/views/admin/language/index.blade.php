@@ -44,7 +44,7 @@
 									<div class="col-lg-3">
 										<div class="form-group">
 											<select class="form-control selectric">
-												<option>{{ __('Set active labguage') }}</option>
+												<option>{{ __('Set active language') }}</option>
 											</select>
 										</div>
 									</div>

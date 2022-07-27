@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Manage Page')
+@section('title','Administrar Página')
 
 @push('css')
 
@@ -11,21 +11,21 @@
 <div class="main-content">
 	<section class="section">
 		<div class="section-header">
-			<h1>{{ __('Manage Page') }}</h1>
+			<h1>{{ __('Administrar Página') }}</h1>
 			<div class="section-header-breadcrumb">
 				<div class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a></div>
-				<div class="breadcrumb-item">{{ __('Manage Page') }}</div>
+				<div class="breadcrumb-item">{{ __('Administrar Página') }}</div>
 			</div>
 		</div>
 
 		<div class="section-body">
-			<h2 class="section-title">{{ __('Manage Page') }}</h2>
-			<p class="section-lead">{{ __('Manage Page section') }}</p>
+			<h2 class="section-title">{{ __('Administrar Página') }}</h2>
+			<p class="section-lead">{{ __('Administrar Página section') }}</p>
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
 						<div class="card-header">
-							<h4>{{ __('Manage Page') }}</h4>
+							<h4>{{ __('Administrar Página') }}</h4>
 							<div class="card-header-form">
 								<form>
 									<div class="input-group">

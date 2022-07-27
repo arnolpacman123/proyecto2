@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Add New Page')
+@section('title','Agregar Nueva Página')
 
 @push('css')
 

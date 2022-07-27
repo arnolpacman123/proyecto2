@@ -86,7 +86,7 @@
                                         </div>
                                         @else
                                         <div class="not-found text-center">
-                                            <span>{{ __('No Result Found.') }}</span>
+                                            <span>{{ __('No Result Found') }}</span>
                                         </div>
                                         @endif
                                     </div>  

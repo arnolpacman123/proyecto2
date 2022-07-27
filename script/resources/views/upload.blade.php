@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Upload')
+@section('title','Subir')
 
 @section('content')
 <!-- error-alert start -->

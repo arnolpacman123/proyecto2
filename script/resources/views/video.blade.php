@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Latest Videos')
+@section('title','Últimos Vídeos')
 
 @section('content')
 <!-- ellipsis modal -->

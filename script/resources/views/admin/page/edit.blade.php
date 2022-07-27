@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Edit Page')
+@section('title','Editar Página')
 
 @push('css')
 
@@ -11,21 +11,21 @@
 <div class="main-content">
 	<section class="section">
 		<div class="section-header">
-			<h1>{{ __('Edit Page') }}</h1>
+			<h1>{{ __('Editar Página') }}</h1>
 			<div class="section-header-breadcrumb">
 				<div class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a></div>
-				<div class="breadcrumb-item">{{ __('Edit Page') }}</div>
+				<div class="breadcrumb-item">{{ __('Editar Página') }}</div>
 			</div>
 		</div>
 
 		<div class="section-body">
-			<h2 class="section-title">{{ __('Edit Page') }}</h2>
-			<p class="section-lead">{{ __('Edit Page section') }}</p>
+			<h2 class="section-title">{{ __('Editar Página') }}</h2>
+			<p class="section-lead">{{ __('Editar Página section') }}</p>
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
 						<div class="card-header">
-							<h4>{{ __('Edit Page') }}</h4>
+							<h4>{{ __('Editar Página') }}</h4>
 						</div>
 						<div class="card-body">
 							<form action="{{ route('admin.page.update',$page->id) }}" method="POST" enctype="multipart/form-data">

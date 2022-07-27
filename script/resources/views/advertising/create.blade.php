@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Advertising')
+@section('title','Publicidad')
 
 @section('content')
 <!-- success-alert start -->

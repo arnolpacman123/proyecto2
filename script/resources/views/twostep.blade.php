@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Two Factor')
+@section('title','Dos Factores')
 
 @section('content')
 <div class="main-content pt-200 pb-50">

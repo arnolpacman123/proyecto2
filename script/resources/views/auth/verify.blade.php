@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Verify')
+@section('title','Verificar')
 
 @section('content')
 <div class="verify-email pt-200 pb-130">

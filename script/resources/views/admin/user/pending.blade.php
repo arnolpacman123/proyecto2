@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Pending Users')
+@section('title','Usuarios Pendientes')
 
 @push('css')
 
@@ -11,21 +11,21 @@
 <div class="main-content">
 	<section class="section">
 		<div class="section-header">
-			<h1>{{ __('Pending Users') }}</h1>
+			<h1>{{ __('Usuarios Pendientes') }}</h1>
 			<div class="section-header-breadcrumb">
 				<div class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a></div>
-				<div class="breadcrumb-item">{{ __('Pending Users') }}</div>
+				<div class="breadcrumb-item">{{ __('Usuarios Pendientes') }}</div>
 			</div>
 		</div>
 
 		<div class="section-body">
-			<h2 class="section-title">{{ __('Pending Users') }}</h2>
-			<p class="section-lead">{{ __('Pending Users Section') }}</p>
+			<h2 class="section-title">{{ __('Usuarios Pendientes') }}</h2>
+			<p class="section-lead">{{ __('Usuarios Pendientes Section') }}</p>
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
 						<div class="card-header">
-							<h4>{{ __('Pending Users') }}</h4>
+							<h4>{{ __('Usuarios Pendientes') }}</h4>
 							<div class="card-header-form">
 								<form>
 									<div class="input-group">

@@ -44,7 +44,7 @@ class LanguageController extends Controller
                 $main_lang = $lang;
             }
         }
-        $en_file_get = file_get_contents(resource_path('lang/en.json'));
+        $en_file_get = file_get_contents(resource_path('lang/es.json'));
         $en_data = json_decode($en_file_get);
         if(!file_exists(resource_path('lang/'.$request->language.'.json')))
         {

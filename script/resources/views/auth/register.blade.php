@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Register')
+@section('title','Regsitrarse')
 
 @section('content')
 <!-- main area start -->

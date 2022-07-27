@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Find User')
+@section('title','Encontrar Usuario')
 
 @section('content')
 <!-- main area start -->

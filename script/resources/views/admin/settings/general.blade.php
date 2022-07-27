@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','General Settings')
+@section('title','Configuración General')
 
 @push('css')
 <link rel="stylesheet" href="{{ asset('backend/assets/css/selectric.css') }}">
