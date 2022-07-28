@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Add New Language')
+@section('title',__('Add New Language'))
 
 @push('css')
 <link rel="stylesheet" href="{{ asset('backend/assets/css/selectric.css') }}">

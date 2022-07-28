@@ -20,7 +20,7 @@
       <li><a target="__blank" href="{{ route('video.show',$video->slug) }}">{{ __('Go to video') }}</a></li>
       <li><a href="javascript:void(0)" onclick="share('{{ $video->slug }}')">{{ __('Share') }}</a></li>
       <li><a href="javascript:void(0)" onclick="copy_link()">{{ __('Copy Link') }}</a></li>
-      <li><a href="javascript:void(0)" onclick="embed('{{ $video->slug }}')">{{ __('Embed') }}</a></li>
+      <li><a href="javascript:void(0)" onclick="embed('{{ $video->slug }}')">{{ __('Embed Code') }}</a></li>
       <li><a href="javascript:void(0)" onclick="cancel_ellipish()">{{ __('Cancel') }}</a></li>
     </ul>
   </nav>

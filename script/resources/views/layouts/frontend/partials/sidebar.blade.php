@@ -2,8 +2,8 @@
     <div class="main-sidebar">
         <div class="suggest-account-area mb-25">
             <h4>{{ __('Suggested Accounts') }}</h4>
-            
-            @php 
+
+            @php
             if (Auth::check()) {
                 $trending_users = App\User::where([
                     ['role_id',2],
@@ -37,7 +37,7 @@
                 ->inRandomOrder()->limit(5)
                 ->get();
             }
-            
+
             @endphp
             @foreach($suggested_users as $user)
             <div class="account-info">
@@ -53,7 +53,7 @@
             </div>
             @endforeach
         </div>
-        @php 
+        @php
         $sponsor = App\Sponsor::inRandomOrder()
         ->first();
         @endphp
@@ -87,7 +87,7 @@
             </div>
             @endforeach
         </div>
-        @php 
+        @php
         $pages = App\Page::all();
         @endphp
         <div class="page-links">
@@ -95,7 +95,7 @@
             <a class="pjax" href="{{ route('page.show',encrypt($page->id)) }}">{{ $page->title }}</a>
             @endforeach
         </div>
-        @php 
+        @php
         $option = App\Option::where('key','site_value')->first();
         $site_value = json_decode($option->value);
         @endphp
@@ -107,7 +107,7 @@
                     <li><a target="_blank" href="{{ $site_value->google_url }}"><i class="fab fa-google-plus-g"></i></a></li>
                 </ul>
             </div>
-            @php 
+            @php
             $language_file = file_get_contents(resource_path('json/lang.json'));
             $langs = json_decode($language_file);
             foreach ($langs as $key => $value) {
@@ -118,14 +118,6 @@
             }
             @endphp
             <div class="select-language ml-auto">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $default_lang->name }}</a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <div class="dropdown-language">
-                        @foreach(App\Language::where('status','active')->get() as $lang)
-                        <a class="pjax dropdown-item" href="{{ route('lang.set',$lang->code) }}">{{ $lang->name }}</a>
-                        @endforeach
-                    </div>
-                </div>
             </div>
         </div>
         <div class="copyright-section">

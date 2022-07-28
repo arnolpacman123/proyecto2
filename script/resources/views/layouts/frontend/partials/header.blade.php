@@ -146,10 +146,6 @@
                                     <a href="{{ route('settings') }}"
                                        class="pjax dropdown-item">{{ __('Settings') }}</a>
                                     <div class="dropdown-border">
-                                        <a href="{{ route('ads.index') }}"
-                                           class="dropdown-item">{{ __('Advertising') }}</a>
-                                    </div>
-                                    <div class="dropdown-border">
                                         <a href="{{ route('trending') }}"
                                            class="pjax dropdown-item">{{ __('Trending') }}</a>
                                         <a href="{{ route('latest') }}"

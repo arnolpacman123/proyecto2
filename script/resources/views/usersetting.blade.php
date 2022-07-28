@@ -39,7 +39,7 @@
 								<li><a data-toggle="tab" href="#menu2">{{ __('Password') }}</a></li>
 							</ul>
 						</div>
-						@php 
+						@php
 						$user = json_decode(Auth::User()->value);
 						@endphp
 						<div class="product-info-tab">
@@ -102,7 +102,7 @@
 													</div>
 												</div>
 												<div class="col-lg-6">
-													<h6>{{ __('Relation') }}</h6>
+													<h6>{{ __('Marital Status') }}</h6>
 													<div class="login-birthday-display">
 														<div class="login-form-gorup">
 															<select name="relation">
@@ -136,9 +136,9 @@
 											<div class="login-form-gorup">
 												<textarea name="bio" class="login-form-control" cols="7" rows="5" placeholder="{{ __('About Me') }}">{{ $user->bio }}</textarea>
 											</div>
-											<h6>{{ __('Facbook') }}</h6>
+											<h6>{{ __('Facebook') }}</h6>
 											<div class="login-form-gorup">
-												<input type="text" id="facebook" class="login-form-control" name="facebook" placeholder="{{ __('Facbook') }}" value="{{ $user->facebook }}">
+												<input type="text" id="facebook" class="login-form-control" name="facebook" placeholder="{{ __('Facebook') }}" value="{{ $user->facebook }}">
 											</div>
 											<h6>{{ __('Twitter') }}</h6>
 											<div class="login-form-gorup">

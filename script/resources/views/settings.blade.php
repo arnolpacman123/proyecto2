@@ -30,15 +30,11 @@
 						<div class="settings-main-menu">
 							<nav>
 								<ul class="nav nav-tabs">
-									@php 
+									@php
 									$site_data = App\Option::where('key','user_value')->first();
 									$info = json_decode($site_data->value);
 									@endphp
 									<li><a href="#avatar" data-toggle="tab" class="active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M262.3 199.2c-1.6-2.8-5.6-3.2-7.7-.7l-91.9 122.2c-2.5 2.9-.6 7.4 3.2 7.7l161.1 14c3.8.3 6.4-3.8 4.5-7.1l-69.2-136.1zM367.2 264.1c-1.6-2.8-5.6-3.2-7.7-.7l-24.8 25.1a4.68 4.68 0 0 0-.5 5.4l25.4 49.5c.8 1.3 2.1 2.2 3.7 2.3l44.9 3.9c3.8.3 6.4-3.8 4.5-7.1l-45.5-78.4zM378.1 224.4c11.2-.1 20.9-8.3 23-19.2 2.8-14.8-8.6-28.3-23.7-28.1-11.2.1-20.9 8.3-23 19.2-2.8 14.8 8.6 28.3 23.7 28.1z"></path><path fill="currentColor" d="M455.2 129.3l-65.8-5.7-6.1-67c-1.3-14.9-14.5-25.9-29.5-24.5L56.7 58.9c-14.9 1.3-25.9 14.5-24.6 29.4l26.8 296.5c1.3 14.9 14.5 25.9 29.5 24.5l15.7-1.4-1.5 16.7c-1.3 14.9 9.7 28 24.7 29.3l297.3 25.9c14.9 1.3 28.1-9.7 29.4-24.6l26-296.6c1.2-14.8-9.8-28-24.8-29.3zM87.6 300.7c-3.7.3-7-2.4-7.4-6.1l-18-200c-.3-3.7 2.4-7 6.1-7.3l279.2-25.1c3.7-.3 7 2.4 7.4 6.1l4.8 52.8L158 103.4c-14.9-1.3-28.1 9.7-29.4 24.6l-14.9 170.3-26.1 2.4zm362.2-135.6l-17.5 200c-.3 3.7-3.6 6.5-7.3 6.2l-18.6-1.6L145.7 347c-3.7-.3-6.5-3.6-6.2-7.3l3.8-43.9L157 139.7c.3-3.7 3.6-6.5 7.3-6.2l198 17.3 29.7 2.6 51.6 4.5c3.8.2 6.6 3.5 6.2 7.2z"></path></svg> {{ __('Avatar & Cover') }}</a></li>
-									@if($info->user_monetization == 'enabled')
-									<li><a href="#monetization" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M404 160H108c-33.1 0-60 26.9-60 60v168c0 33.1 26.9 60 60 60h296c33.1 0 60-26.9 60-60V220c0-33.1-26.9-60-60-60zM342.9 65L108 110.9c-18 4-44 22.1-44 44.1 0 0 15-19 49-19h287v-20.5c0-12.6-5-28.7-13.9-37.6-11.3-11.3-27.5-16.2-43.2-12.9z"></path></svg> {{ __('Monetization') }}</a></li>
-									@endif
-									<li><a href="#balence" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> {{ __('Balance') }}</a></li>
 									<li><a href="#verify" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"></path></svg> {{ __('Verification') }}</a></li>
 									<li><a href="#twofactor" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> {{ __('Two-factor authentication') }}</a></li>
 									<li><a href="#manage" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="feather" stroke="currentColor"><path fill="none" d="M17.81,4.47C17.73,4.47 17.65,4.45 17.58,4.41C15.66,3.42 14,3 12,3C10.03,3 8.15,3.47 6.44,4.41C6.2,4.54 5.9,4.45 5.76,4.21C5.63,3.97 5.72,3.66 5.96,3.53C7.82,2.5 9.86,2 12,2C14.14,2 16,2.47 18.04,3.5C18.29,3.65 18.38,3.95 18.25,4.19C18.16,4.37 18,4.47 17.81,4.47M3.5,9.72C3.4,9.72 3.3,9.69 3.21,9.63C3,9.47 2.93,9.16 3.09,8.93C4.08,7.53 5.34,6.43 6.84,5.66C10,4.04 14,4.03 17.15,5.65C18.65,6.42 19.91,7.5 20.9,8.9C21.06,9.12 21,9.44 20.78,9.6C20.55,9.76 20.24,9.71 20.08,9.5C19.18,8.22 18.04,7.23 16.69,6.54C13.82,5.07 10.15,5.07 7.29,6.55C5.93,7.25 4.79,8.25 3.89,9.5C3.81,9.65 3.66,9.72 3.5,9.72M9.75,21.79C9.62,21.79 9.5,21.74 9.4,21.64C8.53,20.77 8.06,20.21 7.39,19C6.7,17.77 6.34,16.27 6.34,14.66C6.34,11.69 8.88,9.27 12,9.27C15.12,9.27 17.66,11.69 17.66,14.66A0.5,0.5 0 0,1 17.16,15.16A0.5,0.5 0 0,1 16.66,14.66C16.66,12.24 14.57,10.27 12,10.27C9.43,10.27 7.34,12.24 7.34,14.66C7.34,16.1 7.66,17.43 8.27,18.5C8.91,19.66 9.35,20.15 10.12,20.93C10.31,21.13 10.31,21.44 10.12,21.64C10,21.74 9.88,21.79 9.75,21.79M16.92,19.94C15.73,19.94 14.68,19.64 13.82,19.05C12.33,18.04 11.44,16.4 11.44,14.66A0.5,0.5 0 0,1 11.94,14.16A0.5,0.5 0 0,1 12.44,14.66C12.44,16.07 13.16,17.4 14.38,18.22C15.09,18.7 15.92,18.93 16.92,18.93C17.16,18.93 17.56,18.9 17.96,18.83C18.23,18.78 18.5,18.96 18.54,19.24C18.59,19.5 18.41,19.77 18.13,19.82C17.56,19.93 17.06,19.94 16.92,19.94M14.91,22C14.87,22 14.82,22 14.78,22C13.19,21.54 12.15,20.95 11.06,19.88C9.66,18.5 8.89,16.64 8.89,14.66C8.89,13.04 10.27,11.72 11.97,11.72C13.67,11.72 15.05,13.04 15.05,14.66C15.05,15.73 16,16.6 17.13,16.6C18.28,16.6 19.21,15.73 19.21,14.66C19.21,10.89 15.96,7.83 11.96,7.83C9.12,7.83 6.5,9.41 5.35,11.86C4.96,12.67 4.76,13.62 4.76,14.66C4.76,15.44 4.83,16.67 5.43,18.27C5.53,18.53 5.4,18.82 5.14,18.91C4.88,19 4.59,18.87 4.5,18.62C4,17.31 3.77,16 3.77,14.66C3.77,13.46 4,12.37 4.45,11.42C5.78,8.63 8.73,6.82 11.96,6.82C16.5,6.82 20.21,10.33 20.21,14.65C20.21,16.27 18.83,17.59 17.13,17.59C15.43,17.59 14.05,16.27 14.05,14.65C14.05,13.58 13.12,12.71 11.97,12.71C10.82,12.71 9.89,13.58 9.89,14.65C9.89,16.36 10.55,17.96 11.76,19.16C12.71,20.1 13.62,20.62 15.03,21C15.3,21.08 15.45,21.36 15.38,21.62C15.33,21.85 15.12,22 14.91,22Z"></path></svg> {{ __('Manage Sessions') }}</a></li>
@@ -55,7 +51,7 @@
 						<div class="setting-main-area tab-pane fade in active show" id="avatar">
 							<div class="settings-content-area">
 								<h4>{{ __('Avatar & Cover') }}</h4>
-								@php 
+								@php
 								$user_data = json_decode(Auth::User()->value);
 								@endphp
 								<div class="settings-form">
@@ -192,7 +188,7 @@
 										</div>
 									</div>
 								</div>
-								@php 
+								@php
 								$currency_code = App\Option::where('key','currency')->first();
         						$currency_value = json_decode($currency_code->value);
 								@endphp
@@ -243,7 +239,7 @@
 																			<input type="email" class="form-control" placeholder="{{ __('PayPal E-mail') }}" name="email">
 																			<input type="hidden" name="type" value="paypal">
 																		</div>
-																	</div>	
+																	</div>
 																	<div class="col-lg-6">
 																		<div class="form-group">
 																			<label>{{ __('Amount') }}</label>
@@ -266,7 +262,7 @@
 																			<input type="text" class="form-control" placeholder="{{ __('Full Name') }}" name="name">
 																			<input type="hidden" id="withdraw_index" value="{{ route('withdraw.index') }}">
 																		</div>
-																	</div>	
+																	</div>
 																	<div class="col-lg-12">
 																		<div class="form-group">
 																			<label>{{ __('Email') }}</label>
@@ -456,7 +452,7 @@
 												<div class="manage-device d-block">
 													<h4>{{ App\Helpers\UserSystemInfo::get_os() }}</h4>
 													<div class="manage-join">
-														<i class="far fa-window-restore"></i> {{ App\Helpers\UserSystemInfo::get_browsers() }}&nbsp;&nbsp;	
+														<i class="far fa-window-restore"></i> {{ App\Helpers\UserSystemInfo::get_browsers() }}&nbsp;&nbsp;
 														<i class="fas fa-desktop"></i>{{ App\Helpers\UserSystemInfo::get_device() }}&nbsp;&nbsp;
 														<i class="fas fa-map-marker-alt"></i> {{ App\Helpers\UserSystemInfo::get_ip() }}&nbsp;&nbsp;
 													</div>
@@ -502,9 +498,9 @@
 													<img class="img-fluid" src="{{ asset('frontend/img/monetization.jpg') }}">
 												</div>
 												<div class="monetization-info">
-													<h3>{{ __('Grow with TongTang') }}</h3>
-													<p>{{ __("As a TongTang partner, you'll be eligible to earn money from your videos") }}</p>
-													<p>{{ __('To get into the TongTang Partner Program, your channel needs 4,000 public watch hours in the last 12 months, and 1,000 followers.') }}</p>
+													<h3>{{ __('Grow with TikTok') }}</h3>
+													<p>{{ __("As a TikTok partner, you'll be eligible to earn money from your videos") }}</p>
+													<p>{{ __('To get into the TikTok Partner Program, your channel needs 4,000 public watch hours in the last 12 months, and 1,000 followers.') }}</p>
 												</div>
 												<div class="monetization-box d-flex">
 													<i class="far fa-clock"></i>

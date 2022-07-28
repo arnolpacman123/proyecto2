@@ -53,20 +53,6 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label>{{ __('User Monetization') }}</label>
-									<select class="form-control selectric" name="user_monetization">
-										<option {{ $info->user_monetization == 'enabled' ? 'selected' : '' }} value="enabled">{{ __('Enabled') }}</option>
-										<option {{ $info->user_monetization == 'disabled' ? 'selected' : '' }} value="disabled">{{ __('Disabled') }}</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label>{{ __('User Payment Withdraw') }}</label>
-									<select class="form-control selectric" name="user_payment_withdraw">
-										<option {{ $info->user_payment_withdraw == 'enabled' ? 'selected' : '' }} value="enabled">{{ __('Enabled') }}</option>
-										<option {{ $info->user_payment_withdraw == 'disabled' ? 'selected' : '' }} value="disabled">{{ __('Disabled') }}</option>
-									</select>
-								</div>
-								<div class="form-group">
 									<label>{{ __('User Verification') }}</label>
 									<select class="form-control selectric" name="user_verification">
 										<option {{ $info->user_verification == 'enabled' ? 'selected' : '' }} value="enabled">{{ __('Enabled') }}</option>

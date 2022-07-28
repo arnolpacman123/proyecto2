@@ -9,7 +9,7 @@
 			<h1>{{ __('Dashboard') }}</h1>
 		</div>
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="card card-statistic-1">
 					<div class="card-icon bg-primary">
 						<i class="far fa-file-video"></i>
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="card card-statistic-1">
 					<div class="card-icon bg-danger">
 						<i class="far fa-user"></i>
@@ -35,36 +35,6 @@
 						</div>
 						<div class="card-body">
 							{{ $user_count }}
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-				<div class="card card-statistic-1">
-					<div class="card-icon bg-warning">
-						<i class="fab fa-buysellads"></i>
-					</div>
-					<div class="card-wrap">
-						<div class="card-header">
-							<h4>{{ __('Total Advertising') }}</h4>
-						</div>
-						<div class="card-body">
-							{{ $ads_count }}
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-				<div class="card card-statistic-1">
-					<div class="card-icon bg-success">
-						<i class="fas fa-allergies"></i>
-					</div>
-					<div class="card-wrap">
-						<div class="card-header">
-							<h4>{{ __('Total Sponsor') }}</h4>
-						</div>
-						<div class="card-body">
-							{{ $sponsor_count }}
 						</div>
 					</div>
 				</div>
