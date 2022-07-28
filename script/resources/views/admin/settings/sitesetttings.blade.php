@@ -58,40 +58,6 @@
 			                      <label>{{ __('Google Url') }}</label>
 			                      <input type="text" class="form-control" name="google_url" value="{{ $info->google_url }}">
 			                    </div>
-			                    <div class="form-group">
-			                      <label>{{ __('Currency Code') }}</label>
-			                      <input type="text" class="form-control" name="code" value="{{ $currency_value->code }}">
-			                    </div>
-			                    <div class="form-group">
-			                      <label>{{ __('Currency Symbol') }}</label>
-			                      <input type="text" class="form-control" name="symbol" value="{{ $currency_value->symbol }}">
-			                    </div>
-			                    <div class="form-group">
-			                      <label>{{ __('Ads Show Per Secound') }}</label>
-			                      <input type="text" class="form-control" name="ads_show_per_second" value="{{ $ads_show_per_second }}" required>
-			                    </div>
-			                    <h6>{{ __('Ads Settings') }}</h6>
-			                    <div class="form-group">
-			                    	<label>{{ __('Ads Per Click Price') }}</label>
-			                    	<input type="text" class="form-control" name="per_link" value="{{ $per_link }}">
-			                    </div>
-			                    <div class="form-group">
-			                    	<label>{{ __('Ads Per Impression Price') }}</label>
-			                    	<input type="text" class="form-control" name="per_impression" value="{{ $per_impression }}">
-			                    </div>
-			                    <div class="form-group">
-			                    	<label>{{ __('Author Get Per Click') }}</label>
-			                    	<input type="text" class="form-control" name="author_get_per_link" value="{{ $author_get_per_link }}">
-			                    </div>
-			                    <div class="form-group">
-			                    	<label>{{ __('Author Get Per Impression') }}</label>
-			                    	<input type="text" class="form-control" name="author_get_per_impression" value="{{ $author_get_per_impression }}">
-			                    </div>
-			                    <h6>{{ __('Paypal Settings') }}</h6>
-			                    <div class="form-group">
-			                    	<label for="PAYPAL_ID">Paypal Client Id</label>
-			                    	<input type="text" class="form-control" id="PAYPAL_ID" name="PAYPAL_ID" value="{{ env('PAYPAL_ID') }}">
-			                    </div>
 			                    <div class="text-right">
 									<button class="btn btn-primary">{{ __('Update') }}</button>
 								</div>
@@ -129,7 +95,7 @@
 									<div class="form-group">
 										<label>{{ __('Default Language') }}</label>
 										<select class="form-control selectric" name="default_language">
-											@php 
+											@php
 											$lang_option = App\Option::where('key','site_value')->first();
 											$default_lang = json_decode($lang_option->value);
 											@endphp
