@@ -1,7 +1,7 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('admin.dashboard') }}">{{ config('app.name') }}</a>
+            <a href="{{ route('welcome') }}">{{ config('app.name') }}</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('admin.dashboard') }}">{{ Str::limit(config('app.name'),2) }}</a>
