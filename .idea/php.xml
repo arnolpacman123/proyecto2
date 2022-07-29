@@ -113,6 +113,12 @@
       <path value="$PROJECT_DIR$/script/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/script/vendor/spatie/laravel-pjax" />
       <path value="$PROJECT_DIR$/script/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/script/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/script/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/script/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/script/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/script/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/script/vendor/phenx/php-font-lib" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

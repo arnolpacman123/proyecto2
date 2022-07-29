@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Administrar Usuarios')
+@section('title',__('Manage Users'))
 
 @push('css')
 
@@ -54,7 +54,7 @@
 										<th><a target="__blank" href="{{ route('profile.show',$user->slug) }}">{{ $user->username }}</a></th>
 										<td>{{ $user->email }}</td>
 										<td>{{ $user->country }}</td>
-										@php 
+										@php
 										$user_data = json_decode($user->value);
 										@endphp
 										<td>

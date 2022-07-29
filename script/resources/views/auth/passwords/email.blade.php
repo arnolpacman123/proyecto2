@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Contraseña Olvidada')
+@section('title',__('Forgotten Password'))
 
 @section('content')
 <div class="container">

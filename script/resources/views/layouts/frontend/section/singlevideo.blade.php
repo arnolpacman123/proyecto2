@@ -1,6 +1,6 @@
 <div class="col-lg-4 mb-25">
   <div class="video-card">
-    <video id='{{ $video->slug ? $video->slug : $video->id }}' onclick="popup('{{ $video->slug ? $video->slug : $video->id }}')" loop muted="muted" onmouseover="mouseover('{{ $video->slug ? $video->slug : $video->id }}')" onmouseout="mouseout('{{ $video->slug ? $video->slug : $video->id }}')">
+    <video id='{{ $video->slug ? $video->slug : $video->id }}' onclick="popup('{{ $video->slug ? $video->slug : $video->id }}')" loop muted="muted" onmouseover="mouseover('{{ $video->slug ? $video->slug : $video->id }}')" onmouseout="mouseout('{{ $video->slug ? $video->slug : $video->id }}')" height="50">
       <source src='{{ asset($video->url) }}' type='video/mp4'>
     </video>
     <div class="video-card-details-info">

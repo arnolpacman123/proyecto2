@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | All installer routes is here
-| 
+|
 |
 */
 
@@ -53,7 +53,7 @@ Route::get('/','WelcomeController@index')->name('welcome')->middleware('two_fact
 // profile route for show user profile
 Route::get('/user/{slug}','UserController@show')->name('profile.show')->middleware('two_factor');
 
-// popup routes 
+// popup routes
 Route::get('/popup','PopupController@popup')->name('popup')->middleware('two_factor');
 
 // ads routes
@@ -103,7 +103,7 @@ Auth::routes(['verify' => true]);
 |--------------------------------------------------------------------------
 |
 | All installer routes is here
-| 
+|
 |
 */
 
@@ -203,6 +203,10 @@ Route::group(['as'=>'admin.','prefix'=>'admin','namespace'=>'Admin','middleware'
 	Route::get('user/withdraw/request','WithdrawController@index')->name('withdraw.index');
 	Route::get('user/withdraw/accept/{id}','WithdrawController@accept')->name('withdraw.accept');
 	Route::get('user/{user_id}/withdraw/reject/{withdraw_id}/','WithdrawController@reject')->name('withdraw.reject');
+    Route::get('report/user','ReportController@user')->name('report.user');
+    Route::post('report/user','ReportController@user_results')->name('report.user.results');
+    Route::get('report/video','ReportController@video')->name('report.video');
+    Route::post('report/video','ReportController@video_results')->name('report.video.results');
 });
 
 

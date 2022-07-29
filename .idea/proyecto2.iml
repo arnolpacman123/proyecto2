@@ -116,6 +116,12 @@
       <excludeFolder url="file://$MODULE_DIR$/script/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/script/vendor/fruitcake/laravel-cors" />
       <excludeFolder url="file://$MODULE_DIR$/script/vendor/spatie/laravel-pjax" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/sabberworm/php-css-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/barryvdh/laravel-dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/dompdf/dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/masterminds/html5" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/phenx/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/script/vendor/phenx/php-font-lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Manage User Reports')
+@section('title',__('Manage User Reports'))
 
 @push('css')
 

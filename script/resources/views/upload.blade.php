@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Subir')
+@section('title',__('Upload'))
 
 @section('content')
 <!-- error-alert start -->
@@ -15,7 +15,7 @@
     <!-- ellipsis modal -->
     <div class="ellipish-modal d-none">
       <div class="ellipish-modal-content">
-        
+
       </div>
   </div>
 

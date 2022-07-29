@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Iniciar Sesión')
+@section('title',__('Log in'))
 
 @section('content')
 

@@ -102,7 +102,7 @@
                                         <div class="notification-check">
                                             @if($notifications->count() > 0)
                                                 <div class="notification-title">
-                                                    <span>Notification</span>
+                                                    <span>{{__('Notification')}}</span>
                                                 </div>
                                                 <div class="notification-list">
                                                     @include('layouts.frontend.section.notification',$notifications)

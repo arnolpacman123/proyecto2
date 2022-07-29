@@ -1,6 +1,6 @@
 @extends('layouts.backend.app')
 
-@section('title','Administrar Vídeos')
+@section('title',__('Manage Videos'))
 
 @push('css')
 

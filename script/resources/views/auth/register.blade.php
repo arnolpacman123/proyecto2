@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Regsitrarse')
+@section('title',__('SignUp'))
 
 @section('content')
 <!-- main area start -->
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    @php 
+                    @php
                     $user_register = App\Option::where('key','user_value')->first();
                     $user_data = json_decode($user_register->value);
                     @endphp
@@ -81,7 +81,7 @@
                             <div class="comming-soon">
                                 <p>{{ __('This feature is now disabled for some technical issue. We will back right time.') }}</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     @endif
                 </div>

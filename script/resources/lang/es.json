@@ -179,5 +179,8 @@
     "Please enter the 4-digit verification code we sent via Email:": "Por favor, introduzca el código de verificación de 4 dígitos que hemos enviado por correo electrónico:",
     "Verify": "Verificar",
     "Send code again": "Enviar código de nuevo",
-    "Didn't receive the code?": "¿No ha recibido el código?"
+    "Didn't receive the code?": "¿No ha recibido el código?",
+    "Upload": "Subir",
+    "Publication Date": "Fecha de Publicación",
+    "User Who Posted": "Usuario que Publicó"
 }

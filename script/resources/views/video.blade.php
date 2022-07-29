@@ -1,12 +1,12 @@
 @extends('layouts.frontend.app')
 
-@section('title','Últimos Vídeos')
+@section('title',__('Latest Videos'))
 
 @section('content')
 <!-- ellipsis modal -->
 <div class="ellipish-modal d-none">
   <div class="ellipish-modal-content">
-    
+
   </div>
 </div>
 
@@ -16,7 +16,7 @@
         <a href="javascript:void(0)"><img src="{{ asset('frontend/img/cancel.png') }}"></a>
     </div>
     <div class="modal-content-area">
-      
+
     </div>
 </div>
 

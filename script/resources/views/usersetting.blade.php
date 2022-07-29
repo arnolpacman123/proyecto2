@@ -1,5 +1,5 @@
 @extends('layouts.frontend.app')
-@section('title','Ajustes')
+@section('title',__('Settings'))
 @section('content')
 
 <!-- success-alert start -->
